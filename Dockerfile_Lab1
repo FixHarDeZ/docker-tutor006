@@ -1,0 +1,21 @@
+FROM debian:jessie
+#from image file debian ,version jessie
+
+ENV text "Hello world I'm ENV"
+#ENV
+
+RUN echo ${text}
+#Run command :use when build image
+
+CMD ["echo","Hello word I'm CMD"]
+#Nearly Run command but it use with array :use when run image to container
+
+
+#command to build Dockerfile imagename:hello , version: world , locationDockerfile: .
+#docker build -t hello:world .
+
+#command to run dockerimage and delete container after run completed
+#docker run --rm hello:world
+
+
+
